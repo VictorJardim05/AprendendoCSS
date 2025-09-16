@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+}
+
+body {
+    background-color: rgba(0, 236, 253, 0.938);
+}
+
+h1 {
+    color: tomato;
+    background-color: royalblue;
+    font-size: 1.94rem;
+    text-align: center;
+    margin: 50px;
+    padding: 100px;
+    border-radius: 50%;
+    box-shadow: black 0px 10px 30px;
+    text-transform: uppercase;
+}
+
+.caixa-txt {
+    font-family: monospace;
+    font-size: 15px;
+    background-color: cornsilk;
+    padding: 20px;
+    width: 20rem;
+    text-align: justify;
+    margin: 0 auto;
+    border-radius: 1.2rem;
+}
+
+#footer{
+    width: 100%;
+    height: 4rem;
+    position: fixed;
+    bottom: 0;
+    background-color: rgb(24, 110, 110);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#footer p{
+     
+     font-style: italic;
+}

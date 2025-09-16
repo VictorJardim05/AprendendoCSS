@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+body {
+     display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    animation: trocar-cor 500ms infinite;
+}
+
+h1 {
+     animation: trocar-cor 500ms infinite;
+}
+
+img{
+    width: 1000px;
+    animation: flutuar 10s infinite linear alternate-reverse;
+    /* animation: rotar 1s infinite linear; */
+}
+
+#div-main{
+    background-color: black;
+    width: 300px;
+    height: 50px;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+#div-filho{
+    background-color: white;
+    height: 25px;
+    width: 100%;
+    border-radius: 20px;
+    animation: load ease-in 10s;
+}
+
+
+@keyframes load {
+    0%{
+        width: 10%;
+    }
+    10%{
+        width: 20%;
+    }
+   
+    40%{
+        width: 50%;
+    }
+    50%{
+        width: 60%;
+    }
+
+    100%{
+        width: 100%;
+    }
+    
+}
+
+/* @keyframes rotar {
+    
+    0%{
+        transform: rotate(180deg);
+    }
+    
+    50%{
+        transform: rotate(2600deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+
+} */
+
+@keyframes flutuar {
+    0%{
+        transform: translateX(20px) scale(1.1);
+    }
+    25%{
+        transform: translateY(40px);
+
+    }
+    50%{
+transform: translateX(-30px);
+    }
+    75%{
+transform: translateY(20px);
+    }
+    100%{
+transform: translateX(10px);
+    }
+}
+
+
+@keyframes trocar-cor {
+/* 0%{
+    opacity: 0;
+} */
+
+
+    0% {
+        background-color: blue;
+    }
+
+    10% {
+        background-color: red;
+    }
+
+    20% {
+        background-color: gray;
+    }
+
+    30% {
+        background-color: pink;
+    }
+
+    40% {
+        background-color: green;
+    }
+
+    50% {
+        background-color: violet;
+    }
+
+    60% {
+        background-color: brown;
+    }
+
+    70% {
+        background-color: white;
+    }
+
+    80% {
+        background-color: yellow;
+    }
+
+    90% {
+        background-color: cornflowerblue;
+    }
+
+    100% {
+        background-color: black;
+    }
+}
